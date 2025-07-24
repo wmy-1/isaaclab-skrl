@@ -1,13 +1,15 @@
-# 1.DeXtreme: Transfer of Agile In-hand Manipulation from Simulation to Reality
+## content
 
-1. training
-```bash
-python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 scripts/reinforcement_learning/skrl/train.py --task Isaac-Repose-Cube-Allegro-v0 --distributed --headless
-```
-```bash
-python scripts/reinforcement_learning/skrl/play.py --task Isaac-Repose-Cube-Allegro-v0 --headless --video
-```
-2. dive into paper
-💡 There is a challenging gap for multi-finger manipulation model transfering from simulation to the real world.
+<details>
+<summary>Dexterous Hand</summay>
+</details>
 
-2. dive into code
+## 1. Dexterous Hand
+### [1.DeXtreme: Transfer of Agile In-hand Manipulation from Simulation to Reality](https://arxiv.org/abs/2210.13702)
+![alt text](icon/image.png)
+Train a robot hand for dexterous manipulation.[Click here to see details](./Dexterous%20Hand/README.md)
+### [2.]()
+
+
+
+## 2. Humanoid Robot

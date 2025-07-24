@@ -1,5 +1,6 @@
 # IsaacLab
-Content
+This is a repository mainly showcasing the usage of IsaacLab.
+## Content
 [0. Installation](./configuration/Installation.md#installation)
 [1. Simple examples](./Simple_examples.md#1-simple-examples)
 [2. Dive into the code](./Dive_into_the_code.md#2-dive-into-the-code)

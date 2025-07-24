@@ -1,4 +1,5 @@
-# Learning to use skrl
+# skrl
+This is a repository showcasing the usage of skrl.
 ### 1. Environments
 ```python
 # 1. Environments
