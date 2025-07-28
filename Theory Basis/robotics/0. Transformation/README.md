@@ -6,8 +6,8 @@
 ### 2. Open3d 中坐标系的变换
 坐标系规定：X 轴向右，Y 轴向上，Z 轴按右手系垂直屏幕向外。
 ![alt text](icon/image.png){ width=500px height=300px }
-相机方向规定：手持相机，视线方向为 Z 轴正向，up 方向为没有修正过的 -Y 轴方向, X 轴在右手边
-![alt text](icon/c5ca65aca4871339c701e3122672c3e.jpg){ width=500px height=800px }
+相机方向规定：手持相机，视线方向为 Z 轴负方向(front的反方向)，up 方向为没有修正过的 Y 轴方向(叉乘修正), X 轴在右手边<br>
+
 ```python
     vis = o3d.visualization.Visualizer()
     vis.create_window("3D Visualization Example", 800, 600)
@@ -15,10 +15,10 @@
     # vis.add_geometry(line_set)
     # 设置相机视角
     ctr = vis.get_view_control()
-    target_point = [0.0, 0.0, 1.5]  # 目标点位置
+    target_point=[0, 0, 0] # 目标点位置
     eye_point = [0.0, 0.0, 0.5]  # 相机位置
-    up_direction = [0, 1, 0]  # 向上方向
-    ctr.set_front([target_point[i] - eye_point[i] for i in range(3)])  # 计算视线方向
+    up_direction = [0, 1, 0]  # 向上方向(未修正的Y轴正向)
+    ctr.set_front([target_point[i] - eye_point[i] for i in range(3)])  # 视线方向的反方向为z轴正向
     ctr.set_lookat(eye_point)
     ctr.set_up(up_direction)
     ctr.set_zoom(0.8)
