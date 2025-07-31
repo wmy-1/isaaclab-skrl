@@ -59,7 +59,7 @@ simulation_app.close()
 #### 3.2.3 Articulation Control 
 ##### 1) Kinematics
 一个机器人系统的构成 $<link_0,joint_0,...link_i,joint_i...link_n,joint_n>$
-确定根连杆$link_0$的位姿 $<pos\in\R^3,rot\in\R^4,v\in\R^3,\omega\in\R^3>$ 以及所有关节的相对变动$<\omega\in\R>$
+确定 root 连杆$link_0$的位姿 $<pos\in\R^3,rot\in\R^4,v\in\R^3,\omega\in\R^3>$ 以及所有关节的相对变动$<\omega\in\R>$
 注：这些关节可能是移动副也可能是转动副，当移动副时$v\rightarrow{m/s}$,当转动副时$\omega\rightarrow{rad/s}$
 通过运动学确定末端位姿公式：
 $\begin{Bmatrix}^{ref}v_n\\^{ref}\omega_n\end{Bmatrix}=\begin{Bmatrix}^{ref}v_0\\^{ref}\omega_0\end{Bmatrix}+{^{ref}_0R}\ {^0J(\Theta)}\dot\Theta$
@@ -100,6 +100,8 @@ While this mimics an ideal behavior of the joint mechanism, it does not truly mo
 Actuator models:
 1. **implicit**: corresponds to the ideal simulation mechanism (provided by physics engine).`isaaclab.actuators.ImplicitActuator`
 2. **explicit**: corresponds to external drive models (implemented by user). `isaaclab.actuators.IdealPDActuator`
+
+![alt text](icon/image-12.png)
 ```python
 actuators={
     "body": ImplicitActuatorCfg(

@@ -6,8 +6,8 @@ This is a repository mainly showcasing the usage of IsaacLab.
 [2. Dive into the code](./Dive_into_the_code.md#2-dive-into-the-code)
 [3. Direct Workflow](./Direct_Workflow.md#3-direct-workflow---mujoco-humanoid)
 [4. ManagerBased Workflow](./ManagerBased_Workflow.md#3-managerbased-workflow---unitree)
-[5. Skrl Algorithm API]()
-[6. Train your own robot](#3-train-your-own-robot)
+[5. Skrl Algorithm API](#5-skrl-algorithm-api)
+[6. Train your own robot](#6-train-your-own-robot)
 
 
 
@@ -29,8 +29,8 @@ ViewerCfg(eye=(7.5, 7.5, 7.5), lookat=(0.0, 0.0, 0.0), cam_prim_path='/Omniverse
 `isaaclab.envs.common.ViewerCfg` 
 ![alt text](icon/image-4.png)
 
-## 6. ManagerBased Workflow - Unitree
-### 5.1 Create external repository
+## 6. Train your own robot
+### 6.1 Create external repository
 ```bash
 cd IsaacLab
 # 查看已有的具身智能环境
@@ -48,4 +48,4 @@ python .vscode/tools/setup_vscode.py
 Once created, navigate to the installed project and run `python -m pip install -e source/<given-project-name>`
 
 
-### 5.2 RX-V3 robot
+### 6.2 RX-V3 robot
