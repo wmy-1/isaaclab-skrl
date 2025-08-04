@@ -1,13 +1,13 @@
 # IsaacLab
 This is a repository mainly showcasing the usage of IsaacLab.
 ## Content
-[0. Installation](./configuration/Installation.md#installation)
-[1. Simple examples](./Simple_examples.md#1-simple-examples)
-[2. Dive into the code](./Dive_into_the_code.md#2-dive-into-the-code)
-[3. Direct Workflow](./Direct_Workflow.md#3-direct-workflow---mujoco-humanoid)
-[4. ManagerBased Workflow](./ManagerBased_Workflow.md#3-managerbased-workflow---unitree)
-[5. Skrl Algorithm API](#5-skrl-algorithm-api)
-[6. Train your own robot](#6-train-your-own-robot)
+[0. Installation](./0.%20Installation/README.md)
+[1. Simple examples](./1.%20Simple%20examples/README.md)
+[2. Dive into the code](./2.%20Dive%20into%20the%20code/README.md)
+[3. Direct Workflow](./3.%20Direct%20Workflow/README.md)
+[4. ManagerBased Workflow](./4.%20ManagerBased%20Workflow/README.md)
+[5. Skrl Algorithm API]
+[6. Train your own robot]
 
 
 

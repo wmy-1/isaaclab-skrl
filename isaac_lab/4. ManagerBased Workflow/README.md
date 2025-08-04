@@ -405,6 +405,17 @@ H1_CFG = ArticulationCfg(
     })
 ```
 关节速度的限制，根据 actuator model 得出。
+```bash
+myenv.scene['robot'].data.soft_joint_vel_limits.shape
+torch.Size([32, 19])
+myenv.scene['robot'].data.soft_joint_vel_limits
+tensor([[5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36,
+         5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36,
+         5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36, 5.9390e+36,
+         5.9390e+36],...])
+# 由于URDF中未定义，这个硬限制被物理引擎设为了一个代表“无穷大”的巨大数值。
+```
+
 
 #### 4.2.7 ../mdp/\* 下功能函数的作用
 * **../mdp/\* 下的功能函数定义了状态转移过程中的所有操作**
@@ -526,5 +537,10 @@ class JointAction(ActionTerm):
 **use_default_offset=False (绝对模式 / Absolute Actions)**
 动作为实际角度
 
-`Actions` 是为了得到关节应该达到的角度，通过 `Actuator Model` 计算出最终电机施加在关节上的力和力矩，从而指导机器人到达下一个状态
+`Actions` 是关节应该达到的角度，通过 `Actuator Model` 可以计算出最终电机施加在关节上的力和力矩，从而指导机器人到达下一个状态
 ![alt text](icon/image-13.png)
+
+**NOTE:**
+1. $\tau_{ff} 是关节的期望力矩，由递推动力学算法计算得出$，[详情见此处](../Theory%20Basis/robotics/3.%20Dynamics/README.md)
+2. $模型输入的 Actions 是位置(坐标、角度)，速度和加速度的计算可以通过轨迹插值得到$，[详情见此处](../Theory%20Basis/robotics/4.%20Trajectory%20Generation/README.md)
+
