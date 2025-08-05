@@ -14,7 +14,13 @@
 ## 2.1 牛顿-欧拉方程
 ![alt text](icon/400848b92bf4138140f122f4de1ce4d.jpg)
 
-## 2.2 牛顿-欧拉递推动力学算法
+## 2.2 连杆速度分析
+![alt text](icon/c8cd5ac0828ab70d76cf7d899524d84.jpg)
+
+## 2.3 连杆受力分析
+![alt text](icon/671b8a551a63cf8ff8ee0af06f2781e.jpg)
+
+## 2.4 牛顿-欧拉递推动力学算法
 * 计算连杆 $0\rightarrow{n}$ 的速度、加速度
 * 连杆 $0\rightarrow{n}$ 受力分析
 * 关节 $(n+1)\rightarrow{1}$ 受力分析
