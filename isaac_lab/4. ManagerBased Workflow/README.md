@@ -541,6 +541,6 @@ class JointAction(ActionTerm):
 ![alt text](icon/image-13.png)
 
 **NOTE:**
-1. $\tau_{ff} 是关节的期望力矩，由递推动力学算法计算得出$，[详情见此处](../Theory%20Basis/robotics/3.%20Dynamics/README.md)
-2. $模型输入的 Actions 是位置(坐标、角度)，速度和加速度的计算可以通过轨迹插值得到$，[详情见此处](../Theory%20Basis/robotics/4.%20Trajectory%20Generation/README.md)
+1. $\tau_{ff} 是关节的期望力矩，由递推动力学算法计算得出$，[详情见此处](../../Theory%20Basis/robotics/3.%20Dynamics/README.md)
+2. $模型输入的 Actions 是位置(坐标、角度)，速度和加速度的计算可以通过轨迹插值得到$，[详情见此处](../../Theory%20Basis/robotics/4.%20Trajectory%20Generation/README.md)
 
